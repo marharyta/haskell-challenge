@@ -92,6 +92,11 @@ is the same as
 
 {-
 Guards:
+
+abs x
+    | x < 0     = 0 - x
+    | otherwise = x
+
 numOfSolutions a b c
     | disc > 0  = 2
     | disc == 0 = 1
